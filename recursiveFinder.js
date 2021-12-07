@@ -10,6 +10,10 @@ import { compare } from "./lib/recursiveComparator.js"
 
 function recursiveFind(object, target, count = 0, found = false) {
     if(typeof target == 'object') {
+        if(compare(object, target)) {
+            found = true;
+            count++;
+        }
         switch(target.constructor.name) {
             case "Array":
                 const len = target.length;

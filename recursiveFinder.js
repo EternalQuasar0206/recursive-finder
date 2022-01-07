@@ -35,8 +35,8 @@ function recursiveFind(object, target, count = 0, found = false) {
                 break;
 
             case "Set":
-                for (let x of target) {
-                    const res = recursiveFind(object, x);
+                for (let element of target) {
+                    const res = recursiveFind(object, element);
                     count += res.count;
                     if(!found) found = res.found;
                 }

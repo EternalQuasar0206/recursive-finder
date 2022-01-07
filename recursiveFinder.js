@@ -1,11 +1,3 @@
-/*
-    recursiveFind v1.0.0 [Alpha] - 11/2021
-    (C) 2021 Kayky Vitor Cruz
-    Variable find algorithm focused in searching recursively any type of JavaScript object in order to 
-    find what you are looking for. Returns an object with the result and the number of instances. 
-    This code is licensed under Public Domain (CC0).
-*/
-
 import { compare } from "./lib/recursiveComparator.js"
 
 function recursiveFind(object, target, count = 0, found = false) {

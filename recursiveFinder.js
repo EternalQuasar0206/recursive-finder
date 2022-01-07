@@ -1,6 +1,6 @@
 import { compare } from "./lib/recursiveComparator.js"
 
-function recursiveFind(object, target, count = 0, found = false) {
+function recursiveFind(object, target, count = 0, found = false) { 
     if(typeof target == 'object') {
         if(compare(object, target)) {
             found = true;

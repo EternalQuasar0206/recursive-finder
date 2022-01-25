@@ -60,5 +60,3 @@ export function recursiveFind(object, target, count = 0, found = false) {
         found
     };
 }
-
-window.recursiveFind = recursiveFind;
